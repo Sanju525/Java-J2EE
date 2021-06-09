@@ -124,10 +124,10 @@ public class Person {
 
 
     boolean isValidAadhar(String checkValid){
-        return checkValid.length() >= 12;
+        return checkValid.length() == 12;
     }
     boolean isValidPhone(String checkValid){
-        return checkValid.length() >= 10;
+        return checkValid.length() == 10;
     }
     boolean isVaccinatedTwice(String aadharNumber){
         for(int i=0;i<DataBase.array.size();i++){
